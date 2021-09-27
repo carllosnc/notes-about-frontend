@@ -1,0 +1,30 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  visibility: visible;
+  vertical-align: top;
+}
+
+html,
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 1em;
+  overflow-x: hidden;
+
+  @media (max-width: 800px) {
+    font-size: 0.95rem;
+  }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  box-shadow: 0 0 0 30px white inset !important;
+}
