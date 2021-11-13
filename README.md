@@ -1,3 +1,3 @@
-# Notes about langs
+# Notes about frameworks
 
 *Just trying learn something*
