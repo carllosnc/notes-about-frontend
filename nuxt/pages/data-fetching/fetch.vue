@@ -1,9 +1,24 @@
 <script lang="ts">
-  export default {
+  import Vue from 'vue'
+
+  type Post = {
+    image: string,
+    title: string,
+    description: string,
+    id: number
+  }
+
+  export default Vue.extend({
     data(){
+      const posts: Post[] = []
+
       return {
-        posts: []
+        posts
       }
+    },
+
+    watch: {
+      '$route.query': '$fetch'
     },
 
     async fetch(){
@@ -14,12 +29,19 @@
 
     fetchOnServer: false,
     fetchKey: 'site-sidebar',
-  }
+
+    mounted(){
+      this.$nextTick(() => {
+        this.$nuxt.$loading.start()
+      })
+    }
+
+  })
 </script>
 
 <template>
   <div>
-
+    <!-- acessing the fetch state -->
     <h1 v-if="$fetchState.pending"> Loading posts... </h1>
 
     <h1 v-else-if="$fetchState.error"> An error occurred </h1>
