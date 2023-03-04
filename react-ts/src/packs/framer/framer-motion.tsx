@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
 
 export function Framer() {
-  ;<h1> Hello world! </h1>
+  return <h1> Framer example</h1>
 }
