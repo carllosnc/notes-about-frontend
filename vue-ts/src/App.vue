@@ -1,30 +1,17 @@
 <script setup lang="ts">
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-
-import HelloWorld from './components/HelloWorld.vue'
-import Foo from './components/foo.vue'
-
-let items = ['foo', 'bar', 'span']
-
+import CounterOptions from "./topics/options-style.vue";
+import CounterComposition from "./topics/composition-style.vue";
+import TemplateSyntax from "./topics/template-syntax.vue";
+import Reactivity from "./topics/reactivity.vue";
+import ComputedProperties from "./topics/computed-properties.vue";
+import StyleBinding from "./topics/style-binding.vue";
 </script>
 
 <template>
-
-  <Foo msg="padding my value here!" :items="items" />
-
+  <!-- <CounterOptions /> -->
+  <!-- <CounterComposition /> -->
+  <!-- <TemplateSyntax /> -->
+  <!-- <Reactivity /> -->
+  <!-- <ComputedProperties /> -->
+  <StyleBinding />
 </template>
-
-<style scoped>
-  .logo {
-    height: 6em;
-    padding: 1.5em;
-    will-change: filter;
-  }
-  .logo:hover {
-    filter: drop-shadow(0 0 2em #646cffaa);
-  }
-  .logo.vue:hover {
-    filter: drop-shadow(0 0 2em #42b883aa);
-  }
-</style>
