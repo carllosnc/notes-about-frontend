@@ -12,6 +12,8 @@ function toggleActive() {
   isActive.value = !isActive.value;
 }
 
+// computed classes
+
 const isActiveStyle = computed(() => ({
   isActive: isActive.value,
 }));
