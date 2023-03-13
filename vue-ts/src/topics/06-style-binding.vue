@@ -1,26 +1,26 @@
 <script setup lang="ts">
-import { computed, ref } from "vue";
+import { computed, ref } from 'vue'
 
-const isActive = ref(true);
-const hasError = ref(false);
+const isActive = ref(true)
+const hasError = ref(false)
 
 function toggleError() {
-  hasError.value = !hasError.value;
+  hasError.value = !hasError.value
 }
 
 function toggleActive() {
-  isActive.value = !isActive.value;
+  isActive.value = !isActive.value
 }
 
 // computed classes
 
 const isActiveStyle = computed(() => ({
   isActive: isActive.value,
-}));
+}))
 
 const hasErrorStyle = computed(() => ({
   hasError: hasError.value,
-}));
+}))
 </script>
 
 <template>

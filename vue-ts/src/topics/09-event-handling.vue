@@ -1,21 +1,21 @@
 <script setup lang="ts">
-import { ref } from "vue";
+import { ref } from 'vue'
 
-const count = ref(0);
+const count = ref(0)
 
 function increment() {
-  count.value++;
+  count.value++
 }
 
 function warn(message: string, event: Event) {
   if (event) {
-    event.preventDefault();
+    event.preventDefault()
   }
-  alert(message);
+  alert(message)
 }
 
 function fn() {
-  console.log("fn");
+  console.log('fn')
 }
 </script>
 

@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import { ref } from "vue";
-const active = ref(true);
-const type = ref("A");
+import { ref } from 'vue'
+const active = ref(true)
+const type = ref('A')
 
 function toggleRef() {
-  active.value = !active.value;
+  active.value = !active.value
 }
 </script>
 

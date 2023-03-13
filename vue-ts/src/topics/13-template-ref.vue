@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import { onMounted, ref, Ref } from "vue";
+import { onMounted, ref, Ref } from 'vue'
 
-const input: Ref<HTMLInputElement | null> = ref(null);
+const input: Ref<HTMLInputElement | null> = ref(null)
 
 onMounted(() => {
-  input.value!.focus();
-});
+  input.value!.focus()
+})
 </script>
 
 <template>

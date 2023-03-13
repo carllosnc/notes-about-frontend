@@ -1,23 +1,23 @@
 <script setup lang="ts">
-import { ref, watch } from "vue";
+import { ref, watch } from 'vue'
 
-const question = ref("");
-const myAnswer = ref("Questions usually contain a question mark.");
+const question = ref('')
+const myAnswer = ref('Questions usually contain a question mark.')
 
 // watch working directly on a ref
 watch(question, async (newQuestion, oldQuestion) => {
-  if (newQuestion.indexOf("?") > -1) {
-    myAnswer.value = "Thinking...";
+  if (newQuestion.indexOf('?') > -1) {
+    myAnswer.value = 'Thinking...'
 
     try {
-      const response = await fetch(`https://yesno.wtf/api`);
-      const { answer } = await response.json();
-      myAnswer.value = answer;
+      const response = await fetch(`https://yesno.wtf/api`)
+      const { answer } = await response.json()
+      myAnswer.value = answer
     } catch (error) {
-      myAnswer.value = "Error! Could not reach the API. " + error;
+      myAnswer.value = 'Error! Could not reach the API. ' + error
     }
   }
-});
+})
 </script>
 
 <template>

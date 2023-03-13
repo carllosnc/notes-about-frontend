@@ -1,16 +1,16 @@
 <script setup lang="ts">
-import { reactive, ref } from "vue";
+import { reactive, ref } from 'vue'
 
 const list = ref([
-  { id: 1, name: "Foo" },
-  { id: 2, name: "Bar" },
-  { id: 3, name: "Baz" },
-]);
+  { id: 1, name: 'Foo' },
+  { id: 2, name: 'Bar' },
+  { id: 3, name: 'Baz' },
+])
 
 const myObject = reactive({
-  foo: "foo",
-  baz: "baz",
-});
+  foo: 'foo',
+  baz: 'baz',
+})
 </script>
 
 <template>

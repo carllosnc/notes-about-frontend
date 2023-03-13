@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import { ref, Ref } from "vue";
-const input: Ref<string> = ref("");
-const textArea = ref("");
-const select = ref("");
-const checkbox = ref(false);
-const radio = ref("");
-const multipleSelect = ref([]);
+import { ref, Ref } from 'vue'
+const input: Ref<string> = ref('')
+const textArea = ref('')
+const select = ref('')
+const checkbox = ref(false)
+const radio = ref('')
+const multipleSelect = ref([])
 </script>
 
 <template>

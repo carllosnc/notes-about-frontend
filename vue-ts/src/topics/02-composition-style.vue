@@ -1,18 +1,18 @@
 <script setup lang="ts">
-import { ref, onMounted } from "vue";
+import { ref, onMounted } from 'vue'
 
 // reactive state
-let count = ref(0);
+let count = ref(0)
 
 // function increment that mutate state and trigger updates
 function increment() {
-  count.value++;
+  count.value++
 }
 
 // lifecycle hook
 onMounted(() => {
-  console.log(`The initial count is ${count.value}`);
-});
+  console.log(`The initial count is ${count.value}`)
+})
 </script>
 
 <template>

@@ -1,19 +1,19 @@
 <script setup lang="ts">
-import { onMounted, onUpdated, onUnmounted, ref } from "vue";
+import { onMounted, onUpdated, onUnmounted, ref } from 'vue'
 
-const counter = ref(0);
+const counter = ref(0)
 
 onMounted(() => {
-  console.log("onMounted");
-});
+  console.log('onMounted')
+})
 
 onUpdated(() => {
-  console.log("onUpdated");
-});
+  console.log('onUpdated')
+})
 
 onUnmounted(() => {
-  console.log("onUnmounted");
-});
+  console.log('onUnmounted')
+})
 </script>
 
 <template>

@@ -1,26 +1,26 @@
 <script setup lang="ts">
 //https://vuejs.org/guide/essentials/template-syntax.html#directives
 
-import { ref } from "vue";
+import { ref } from 'vue'
 
 const attrs = {
-  id: "container",
-  class: "wrapper",
-};
+  id: 'container',
+  class: 'wrapper',
+}
 
-const number = 10;
-const ok = true;
-const message = "Hello World";
-const item = ref("A simple variable");
-const id = "my-id";
-const rawHtml = '<span style="color: red">Raw HTML</span>';
+const number = 10
+const ok = true
+const message = 'Hello World'
+const item = ref('A simple variable')
+const id = 'my-id'
+const rawHtml = '<span style="color: red">Raw HTML</span>'
 
 function fn() {
-  return "A function";
+  return 'A function'
 }
 
 function alertMe() {
-  alert("Alert!");
+  alert('Alert!')
 }
 </script>
 
@@ -45,8 +45,8 @@ function alertMe() {
     <!-- javascript expressions -->
     {{ number + 1 }}
     {{ Math.random() }}
-    {{ ok ? "YES" : "NO" }}
-    {{ message.split("").reverse().join("") }}
+    {{ ok ? 'YES' : 'NO' }}
+    {{ message.split('').reverse().join('') }}
 
     <!-- calling a function -->
     {{ fn() }}

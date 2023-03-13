@@ -1,32 +1,32 @@
 <script setup lang="ts">
-import { reactive, ref } from "vue";
+import { reactive, ref } from 'vue'
 
 // limited to objects
 const state = reactive({
   count: 0,
-});
+})
 
 function increment() {
-  state.count++;
+  state.count++
 }
 
 // deep reactivity
 const deepState = reactive({
   count: 0,
   obj: {
-    foo: "bar",
+    foo: 'bar',
   },
-});
+})
 
 function incrementDeep() {
-  deepState.count++;
-  deepState.obj.foo = `baz ${String.fromCharCode(65 + deepState.count)}`;
+  deepState.count++
+  deepState.obj.foo = `baz ${String.fromCharCode(65 + deepState.count)}`
 }
 
 // reactive variables(basic values)
-const count = ref(0);
+const count = ref(0)
 function incrementRef() {
-  count.value++;
+  count.value++
 }
 </script>
 
