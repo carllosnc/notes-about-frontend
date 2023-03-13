@@ -1,17 +1,17 @@
 <script setup lang="ts">
-import { ref, defineProps } from "vue";
+import { ref, defineProps } from 'vue'
 
 type Props = {
-  readonly title?: string;
-  readonly start?: number;
-};
+  readonly title?: string
+  readonly start?: number
+}
 
-const props: Props = defineProps(["title", "start"]);
+const props: Props = defineProps(['title', 'start'])
 
-const counter = ref(props.start);
+const counter = ref(props.start)
 
 function increment() {
-  counter.value!++;
+  counter.value!++
 }
 </script>
 

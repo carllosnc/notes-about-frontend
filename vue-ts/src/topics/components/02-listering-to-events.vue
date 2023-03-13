@@ -1,16 +1,16 @@
 <script setup lang="ts">
-import { defineProps } from "vue";
+import { defineProps } from 'vue'
 
 type Props = {
-  readonly title?: string;
-  readonly content?: string;
-};
+  readonly title?: string
+  readonly content?: string
+}
 
-const props: Props = defineProps(["title", "content"]);
-const emit = defineEmits(["action"]);
+const props: Props = defineProps(['title', 'content'])
+const emit = defineEmits(['action'])
 
 function event() {
-  emit("action", props.title);
+  emit('action', props.title)
 }
 </script>
 
