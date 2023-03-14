@@ -1,13 +1,13 @@
 <script setup lang="ts">
 import { ref, defineProps } from 'vue'
 
-type Props = {
-  readonly title?: string
-  readonly start?: number
-}
+// a simple way to define props
+const props = defineProps<{
+  title?: string
+  start?: number
+}>()
 
-const props: Props = defineProps(['title', 'start'])
-
+// a more verbose way to define props
 const counter = ref(props.start)
 
 function increment() {

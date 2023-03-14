@@ -21,14 +21,14 @@ import TemplateRef from './topics/13-template-ref.vue'
 import PassingProps from './topics/components/01-passing-props.vue'
 import ListenToEvents from './topics/components/02-listering-to-events.vue'
 import Slots from './topics/components/03-slots.vue'
+import ComponentModel from './topics/components/04-component-model.vue'
+import AttributeInheritance from './topics/components/05-attribute-inheritance.vue'
 
 const app = createApp(App)
 
 app.mount('#app')
 app
-  .component('ListenToEvents', ListenToEvents)
-  .component('Slots', Slots)
-  .component('PassingProps', PassingProps)
+  // topics
   .component('CounterOptions', CounterOptions)
   .component('CounterComposition', CounterComposition)
   .component('TemplateSyntax', TemplateSyntax)
@@ -42,3 +42,10 @@ app
   .component('LifecycleHooks', LifecycleHooks)
   .component('Watchers', Watchers)
   .component('TemplateRef', TemplateRef)
+
+  // components
+  .component('ListenToEvents', ListenToEvents)
+  .component('Slots', Slots)
+  .component('PassingProps', PassingProps)
+  .component('ComponentModel', ComponentModel)
+  .component('AttributeInheritance', AttributeInheritance)

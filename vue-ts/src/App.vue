@@ -1,4 +1,8 @@
 <script setup lang="ts">
+import { ref, Ref } from 'vue'
+
+const inputValue: Ref<string> = ref('')
+
 const posts = [
   {
     title: 'My journey with Vue',
@@ -16,6 +20,10 @@ const posts = [
 
 function fn(arg: string) {
   console.log(arg)
+}
+
+function externalListener() {
+  console.log('external listener')
 }
 </script>
 
@@ -46,7 +54,12 @@ function fn(arg: string) {
     :content="post.content"
   /> -->
 
-  <Slots>
+  <!-- <Slots>
     <h1 class="text-red-500 font-bold">Hello world</h1>
-  </Slots>
+  </Slots> -->
+
+  <!-- <ComponentModel v-model="inputValue" />
+  <div>Value from component: {{ inputValue }}</div> -->
+
+  <AttributeInheritance class="bg-yellow-300" @click="externalListener" />
 </template>
