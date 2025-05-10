@@ -8,6 +8,7 @@ function useCount(start: number): {
   count: number
   increment: () => void
   decrement: () => void
+  doubled: () => void
 } {
   const [count, setCount] = useState<number>(start)
 
@@ -19,7 +20,11 @@ function useCount(start: number): {
     setCount((s) => s - 1)
   }
 
-  return { count, increment, decrement }
+  function doubled() {
+    setCount((s) => s * 2)
+  }
+
+  return { count, increment, decrement, doubled }
 }
 
 export function App() {

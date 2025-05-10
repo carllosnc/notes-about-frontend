@@ -10,7 +10,7 @@ function increment() {
   state.count++
 }
 
-// deep reactivity
+// deep reactivity, it's meant to be used with objects with nested objects
 const deepState = reactive({
   count: 0,
   obj: {
